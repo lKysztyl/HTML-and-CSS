@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="/css/loginscreen.css">  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+    <title>Login Screen</title>
+</head>
+<body>
+    <section class="loginscreen">
+      
+        <div class="header"> 
+             <h1> Have an account? </h1>
+        </div>
+
+        <div class="boxInput">
+            <input type="text" name="userName" id="userName">
+
+            <input type="password" name="password" id="password"> 
+         <span class="lnr lnr-eye"></span>
+
+        </div>
+
+        <input type="button" value="Sign-in" class="sign" onclick="sign()">
+       
+        <div class="rememberMe">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <h2>Remember Me</h2>
+
+              <div class="forgot">
+                  <a href="#" target="_blank">
+                      <h2>Forgot Passaword</h2>
+                  </a>
+              </div>
+        </div>
+
+        
+            <div class="faceAndTw">
+                <h2>- Or Sign-In with -</h2>
+                <button class="btnFT"><a href="https://pt-br.facebook.com/" target="_blank" rel="external">Facebook</a></button>
+                <button class="btnFT"><a href="https://twitter.com/" target="_blank" rel="external">Twitter</a></button>
+            </div>
+
+
+    </section>
+  
+
+
+    <script src="/js/loginScreen.js"></script>
+</body>
+</html>

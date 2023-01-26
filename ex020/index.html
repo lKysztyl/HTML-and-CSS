@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+           
+        }
+        div:hover {
+           color: aqua;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 300px;
+        }
+
+        div > #hilda {
+            display: none;
+        }
+
+        div:hover > #hilda {
+            background-color: bisque;
+            display: block;
+        }
+
+        #h {
+            display: none;
+        }
+
+        div:hover > #h {
+            background-color: blue;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   
+    <div><h1>Menu</h1>
+        <p>olá mundo</p>
+        <div id="hilda"> sub menu
+            <div id="h">sub menu do menu</div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

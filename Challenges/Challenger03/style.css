@@ -1,0 +1,48 @@
+body {
+    height: 100%;
+    background-color: rgb(149, 100, 100);
+    margin: 0% 0% 0% 0%;
+    
+
+}
+
+.head-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+   background-color: red;
+
+}
+
+.mural {
+    text-align: center;
+    background-color: blue;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+.python {
+    
+    
+}
+
+.python-g {
+    max-width: 450px;
+}
+
+
+.jspag {
+    text-align: center;
+}
+
+.botao {
+    border-radius: 100%;
+    width: 50px;
+    
+}
+

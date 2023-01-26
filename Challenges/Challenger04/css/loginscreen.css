@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp5487102.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@font-face {
+    font-family: Aradora;
+    src: url(/Arodora/Ocean-SemiBold.ttf);
+}
+
+.loginscreen {
+    color: white;
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    background-color: rgba(191, 206, 206, 0.437) transparent; 
+    font-family: Aradora;
+    backdrop-filter: blur(1px);
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.07);
+   
+
+}
+
+.header {
+    margin-top: 30px;
+
+}
+
+#userName {
+    width: 200px;
+    height: 35px;
+    margin-top: 30px;
+    border-radius: 20px;
+    opacity: 10;
+    background-color: transparent;
+    color: white;
+
+}
+
+#password {
+    width: 200px;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 20px;
+    opacity: 10;
+    background-color: transparent;
+    color: white;
+
+}
+
+
+.lnr-eye {
+    position: absolute;
+    top: 144px;
+    right: 55px;
+    cursor: pointer;
+}
+
+.sign {
+    margin-top: 15px;
+    height: 35px;
+    width: 200px;
+    border-radius: 20px;
+    border: transparent;
+    background-color: hsl(6, 65%, 48%);
+    color: white;
+    font-family: Aradora;
+    cursor: pointer;
+   
+}
+
+.sign:hover {
+    font-size: 15px;
+
+}
+
+.sign:active {
+    background-color: white;
+    color:  hsl(6, 65%, 48%);
+
+}
+
+.rememberMe {
+    display: flex;
+    font-size: 6px;
+    margin-top: 15px;
+    margin-left: 50px;
+    
+}
+
+.rememberMe > h2 {
+    margin-left: 3%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color:  hsl(6, 65%, 48%);
+}
+
+.rememberMe > div {
+    margin-left: 20%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.forgot > a {
+    color:  hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+#checkbox {
+    cursor: pointer;
+    box-decoration-break: clone;
+}
+
+.faceAndTw {
+    margin-top: 15px;
+    font-size: 10px;
+
+}
+
+.faceAndTw > button > a {
+    text-decoration: none;
+    color: inherit; 
+
+}
+
+.faceAndTw > button {
+    border-radius: 10px;
+    border: transparent;
+    width: 100px;
+    height: 35px;
+    margin-top: 15px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.btnFT:nth-child(2) {
+ background-color:white;
+ color:  #4267B2;
+ font-family: Aradora;
+ cursor: pointer;
+
+}
+
+.btnFT:nth-child(2):hover {
+    font-size: 15px;
+}
+
+.btnFT:nth-child(2):active {
+    background-color: #4267B2;
+    color:  white;
+
+}
+
+
+.btnFT:nth-child(3) {
+    background-color: white;
+    color: #1DA1F2;
+    font-family: Aradora;
+    cursor: pointer;
+
+}
+
+.btnFT:nth-child(3):hover {
+    font-size: 15px;
+}
+
+.btnFT:nth-child(3):active {
+    background-color: #1DA1F2;
+    color: white; 
+
+}

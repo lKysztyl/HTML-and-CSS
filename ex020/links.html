@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            color: rgb(125, 84, 84);
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: yellow;
+        }
+        
+        a::after {
+            content:'[links]';
+            text-decoration: none;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <a href="https://www.youtube.com/" rel="external" target="_blank"><li>YouTube</li></a>
+               
+            
+        </a>
+        <a href="https://github.com/lKysztyl" target="_blank" rel="external">
+            <li>GitHub</li>
+        </a>
+        <a href="https://favicon.io/" target="_blank" rel="external">
+            <li>Favicon</li>
+        </a>
+    </ul>
+    
+</body>
+</html>

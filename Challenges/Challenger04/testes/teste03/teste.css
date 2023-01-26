@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.border {
+    margin: auto;
+    margin-top: 25%;
+   width: 400px;
+   position: relative;
+   background: linear-gradient(90deg, rgba(26,39,156,1) 0%, rgba(253,29,29,1) 30%, rgba(252,176,69,1) 100%);
+   padding: 5px;
+   background-size: 300%;
+   animation: border 3s ease-in-out infinite;
+   border-radius: 10px;
+}
+
+.main {
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    
+}
+
+
+
+.main:active {
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.433);
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    
+    
+}
+
+@keyframes border {
+    0% {
+        background-position: 0% 50%;
+    } 50% {
+        background-position: 100% 50%;
+    } 100% {
+        background-position: 0% 50%;
+    }
+}

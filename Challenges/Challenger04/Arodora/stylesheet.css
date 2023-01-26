@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Ocean';
+    src: url('Ocean-Medium.eot');
+    src: local('Ocean Medium'), local('Ocean-Medium'),
+        url('Ocean-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Ocean-Medium.woff2') format('woff2'),
+        url('Ocean-Medium.woff') format('woff'),
+        url('Ocean-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ocean';
+    src: url('Ocean-BoldOblique.eot');
+    src: local('Ocean Bold Oblique'), local('Ocean-BoldOblique'),
+        url('Ocean-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('Ocean-BoldOblique.woff2') format('woff2'),
+        url('Ocean-BoldOblique.woff') format('woff'),
+        url('Ocean-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ocean';
+    src: url('Ocean-Light.eot');
+    src: local('Ocean Light'), local('Ocean-Light'),
+        url('Ocean-Light.eot?#iefix') format('embedded-opentype'),
+        url('Ocean-Light.woff2') format('woff2'),
+        url('Ocean-Light.woff') format('woff'),
+        url('Ocean-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ocean';
+    src: url('Ocean-SemiBold.eot');
+    src: local('Ocean SemiBold'), local('Ocean-SemiBold'),
+        url('Ocean-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Ocean-SemiBold.woff2') format('woff2'),
+        url('Ocean-SemiBold.woff') format('woff'),
+        url('Ocean-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ocean';
+    src: url('Ocean-LightOblique.eot');
+    src: local('Ocean Light Oblique'), local('Ocean-LightOblique'),
+        url('Ocean-LightOblique.eot?#iefix') format('embedded-opentype'),
+        url('Ocean-LightOblique.woff2') format('woff2'),
+        url('Ocean-LightOblique.woff') format('woff'),
+        url('Ocean-LightOblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ocean';
+    src: url('Ocean-SemiBoldOblique.eot');
+    src: local('Ocean SemiBold Oblique'), local('Ocean-SemiBoldOblique'),
+        url('Ocean-SemiBoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('Ocean-SemiBoldOblique.woff2') format('woff2'),
+        url('Ocean-SemiBoldOblique.woff') format('woff'),
+        url('Ocean-SemiBoldOblique.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ocean';
+    src: url('Ocean-Bold.eot');
+    src: local('Ocean Bold'), local('Ocean-Bold'),
+        url('Ocean-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Ocean-Bold.woff2') format('woff2'),
+        url('Ocean-Bold.woff') format('woff'),
+        url('Ocean-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ocean';
+    src: url('Ocean-MediumOblique.eot');
+    src: local('Ocean Medium Oblique'), local('Ocean-MediumOblique'),
+        url('Ocean-MediumOblique.eot?#iefix') format('embedded-opentype'),
+        url('Ocean-MediumOblique.woff2') format('woff2'),
+        url('Ocean-MediumOblique.woff') format('woff'),
+        url('Ocean-MediumOblique.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+

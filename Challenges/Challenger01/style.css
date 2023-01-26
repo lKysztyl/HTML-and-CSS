@@ -1,0 +1,150 @@
+body {
+    background-image: url(https://mobimg.b-cdn.net/v3/fetch/23/2353f5f50fbe5752e32be9ec85061211.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.tituloHead {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(201, 125, 71);
+    opacity: calc(90%);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: larger;
+    font-size: 200%;
+    text-shadow: 5pt 5px 5px rgba(208, 161, 107, 0.225);
+   
+    
+}
+
+/*                                    Coruja Jacurutu                                   */
+
+
+div#corujaJacurutu {
+    
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+
+    
+
+}
+
+.perfilJacurutu {
+    height: auto;
+    width: auto;
+    margin-top: auto;
+
+}
+
+
+.Jacurutu {
+    border-radius: 100%;
+    width: 15%;
+    height: 15%;
+    margin-top: auto;
+    margin-left: 10%;
+    opacity: 90%;
+    border: 3px solid rgb(159, 104, 53);
+    margin-left: 40%;
+
+}
+
+.cardJacurutu {
+    font-size: 17px;
+    font-family: cursive;
+    font-style: italic;
+    border-radius: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    border-bottom: 2px 2px 2px ;
+    text-align: center;
+    background-color: rgba(174, 125, 69, 0.397);
+    color: rgba(255, 255, 255, 0.59);
+    margin-top: 3%;
+
+}
+
+    .li1 {
+        text-align: left;;
+    }
+    .li2 {
+        text-align: left;;
+    }
+    .li3 {
+        text-align: left;;
+    }
+    
+    
+
+
+/*                                    Coruja Megascops                                   */
+
+div#corujas {
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.perfilMegacorps2 {
+    height: auto;
+    width: auto;
+    margin-top: auto;
+}
+
+.Megacorps {
+    border-radius: 100%;
+    width: 15%;
+    height: 15%;
+    margin-top: auto;
+    margin-left: 10%;
+    opacity: 90%;
+    border: 3px solid rgb(159, 104, 53);
+    margin-left: 40%;
+    
+    
+}
+    
+.cardMegacorps2 {
+    font-size: 17px;
+    font-family: cursive;
+    font-style: italic;
+    border-radius: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    border-bottom: 2px 2px 2px ;
+    text-align: center;
+    background-color: rgba(174, 125, 69, 0.397);
+    color: rgba(255, 255, 255, 0.59);
+    margin-top: 3%;
+}
+
+/*                                    Coruja das Torres                                  */
+
+div#Torres {
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+.perfilTorres {
+    height: auto;
+    width: auto;
+    margin-top: auto;
+
+}
+
+.cardTorres {
+    font-size: 17px;
+    font-family: cursive;
+    font-style: italic;
+    border-radius: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    border-bottom: 2px 2px 2px ;
+    text-align: center;
+    background-color: rgba(174, 125, 69, 0.397);
+    color: rgba(255, 255, 255, 0.59);
+    margin-top: 3%;
+
+}

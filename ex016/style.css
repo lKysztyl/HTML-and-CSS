@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.box {
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: 500% 100%;
+    animation: degrade-animado 5s  infinite alternate;
+    background-image: linear-gradient(to left, blue, orangered, yellow);
+}
+
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;   
+    }
+    }
+
+    .tl {
+        margin-bottom: 30px;
+        padding-top: 10px;
+    }
+    
+
+
+
+p {
+    text-align: justify;
+    font-weight:  ;
+}
