@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url(imagens/pattern004.png);
+}
+
+.quad {
+    display: inline-block;
+     width: 200px;
+    height: 200px;
+    border:  2px solid rgba(0, 0, 0, 0.45);
+    background-color: white;
+}
+
+.quad:nth-child(1) {
+    background-image: url(imagens/pattern001.png);
+    
+}
+
+.quad:nth-child(2) {
+    background-image: url(imagens/pattern002.png);
+
+}
+
+.quad:nth-child(3) {
+    background-image: url(imagens/pattern003.png);
+
+}
+
+.quad:nth-child(4) {
+    background-image: url(imagens/wallpaper005.jpg);
+
+}
