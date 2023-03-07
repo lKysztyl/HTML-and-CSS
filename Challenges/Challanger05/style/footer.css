@@ -1,0 +1,12 @@
+
+
+.hiddenBtn {
+    position: fixed;
+    width: 75px;
+    height: 90px;
+    background-color: var(--cor04);
+    right: 0;
+    bottom: -0;
+    transform: translateY(100%);
+    
+}
