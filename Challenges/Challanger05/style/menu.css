@@ -51,6 +51,14 @@
     transition: 0.5s;
 }
 
+.check {
+    opacity: 0;
+}
+
+.lateral-menu-li {
+    list-style: none;
+}
+
 @media only screen and (max-width: 480px){
     body {
         background-color: #FF9000;
@@ -65,56 +73,161 @@
      }
 
     .icon {
-        margin-left: 100%;
+        margin-left: 120%;
     }
-
-    #microMenu {
-        width: 50px;
-        height: 50px;
-        background-color: #FF9000;
-       
-
-    }
-
-    .bar01 {
-        width: 45px;
-        height: 3px;
-        background-color: #FFF8F0;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        position: relative;
-        top: 20;
-        left: 50%;
-        transform: translate(-50%);
-        
-    }
-
-
-    
-    .bar01:hover:nth-child(1) {
-      transform: rotate(-45%)
-      translate(-5px, 5px);
-      transition: all 1s;
-       
-
-    }
-
-    .bar01:nth-child(2) {
-        display: none;
-    }
-
-    .bar01:hover:nth-child(3) {
-        transform: rotate(45%) 
-        translate(5px, -5px);
-
-    }
-
 
     .nav {
         display: none;
-        
     }
 
+   .menu-mobile {
+        width: 50px;
+        height: 50px;
+        background-color: var(--cor05);
+        
+   }
+
+   .menu-bar {
+        width: 45px;
+        height: 3px;
+        background-color: var(--cor01);
+        position: absolute;
+        top: 10px;
+        left: 6%;
+        transform: translate(-50%, -50%);
+        transition: 0.5s;
+        border-radius: 10px;
+      
+
+   }
+
+   .menu-bar:nth-child(1) {
+    position: absolute;
+    top: 7px;
+    left: 6%;
+    transform: translate(-50%, -50%);
+ 
+
+}
+
+   .menu-bar:nth-child(2) {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+   }
+
+   .menu-bar:nth-child(3) {
+        position: absolute;
+        top:  40px;
+        left: 25px;
+        transform: translate(-50%, -50%);
+    
+   }
+
+    .check {
+        width: 50px;
+        height: 50px;
+        z-index: 2000;
+        opacity: 0%;
+        position: absolute;
+       
+
+    }
+
+    .menu-mobile .check:checked ~ .menu-bar {
+        transform: rotate(45deg);
+       
+        scale: 120%;
+       
+        top: 25px;
+        left: 2px;
+       
+    }
+
+    .menu-mobile .check:checked ~ .menu-bar:nth-child(2) {
+        opacity: 0;
+       
+    }
+
+    .menu-mobile .check:checked ~ .menu-bar:nth-child(3) {
+        transform: rotate(-45deg);
+       
+        scale: 120%;
+        top: 25px;
+        left: 2px;
+        position: absolute;
+       
+       
+    }
+
+    .lateral-menu {
+        width: 200px;
+        height: 350px;
+        background-color: var(--cor01);
+        position: absolute;
+        top: 50px;
+        left: -300px;
+        z-index: 10;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .check:checked ~ .lateral-menu {
+        left: 0;
+        opacity: 100;
+        border-radius: 0  0 10px 0;
+    }
+
+    .lateral-menu-li {
+        color: var(--cor02);
+        font-family: 'Overpass', sans-serif;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        height: 20%; 
+        line-height: 450%;   
+
+    }
+
+    #lateral-menu-li0::before {
+        content: 'Inicio';
+       
+    }
+
+    #lateral-menu-li1::before {
+        content: 'Menu';
+       
+    }
+
+    #lateral-menu-li2::before {
+        content: 'Restaurants';
+    }
+
+    #lateral-menu-li3::before {
+        content: 'Delivery';
+    }
+
+    #lateral-menu-li4::before {
+        content: 'App Lorenzzo`s';
+
+    }
+
+    .lateral-menu-li:hover {
+        background-color: var(--cor02);
+        color: var(--cor01);
+        transition: .5s;
+       
+    }
+
+    
+   
+
+    
+
+    
     
 }
 

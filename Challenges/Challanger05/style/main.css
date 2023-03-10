@@ -76,3 +76,54 @@
 #slide5:checked ~  .s1 {
     margin-left: -80%;
 }
+
+.comboFood {
+    background-image: url(https://as2.ftcdn.net/v2/jpg/04/43/37/07/1000_F_443370711_sqHRnSIQovW6uyQ5ZwDpd4kjCG8Q6swm.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bucha {
+    width: 100vw;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.sec-pizza {
+    width: 100vw;
+    height: 500px;
+    background-color: aqua;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .thumb {
+        width: 100vw;
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        top: 20;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .bar {
+        width: 55px;
+        height: 15px;
+        margin: 10px;
+        
+    }
+
+    #menu-list {
+        width: 500px;
+        height: 500px;
+        background-color: pink;
+    }
+}
+
+

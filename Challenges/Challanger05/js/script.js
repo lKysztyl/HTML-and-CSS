@@ -1,5 +1,56 @@
 
 
+const menuMobile = document.createElement('div');
+menuMobile.classList.add('menu-mobile');
+menuMobile.setAttribute('id', 'menuMobile');
+
+const checkbox = document.createElement('input');
+checkbox.type = 'checkbox';
+checkbox.classList.add('check');
+
+const  menuMobile02 = menuMobile.firstChild;
+
+menuMobile.insertBefore(checkbox, menuMobile02);
+
+const menuBar =  document.createElement('div');
+
+const bars = ['div', 'div', 'div']
+bars.forEach(function () {
+    const menuBar =  document.createElement('div');
+    menuBar.classList.add('menu-bar');
+    menuMobile.appendChild(menuBar);
+});
+
+const icon = menu.firstChild;
+
+menuMobile.appendChild(menuBar);
+menu.insertBefore(menuMobile, icon);
+
+/*                           lateral-menu                        */
+
+const lateralMenu = document.createElement('nav');
+lateralMenu.classList.add('lateral-menu');
+menuMobile.appendChild(lateralMenu);
+
+for (let i = 0; i < 5 ; i++) {
+    const a = document.createElement('a');
+a.classList.add('lateral-menu-a');    
+lateralMenu.appendChild(a);
+
+const li = document.createElement('li');
+li.classList.add('lateral-menu-li');
+li.setAttribute('id', 'lateral-menu-li' + i);
+a.appendChild(li);
+
+}
+
+
+
+
+
+
+/*-*-*-*-************************ Main *************************/
+
 function carrosel() {
 
   function r(min, max) {
@@ -297,6 +348,27 @@ function carrosel() {
   
     }
   
+    
+function slideInterval() {
+    const date = new Date();
+    const seconds = date.getSeconds();
+
+    if (seconds >= 0 && seconds <= 9) {
+        document.querySelector('#slide1').checked = true;
+
+    } else if (seconds >= 10 && seconds <= 19) {
+        document.querySelector('#slide2').checked = true;
+    } else if (seconds >= 30 && seconds <= 39) {
+        document.querySelector('#slide3').checked = true;
+    } else if (seconds >= 40 && seconds <= 49) {
+        document.querySelector('#slide4').checked = true;
+    } else if (seconds >= 50 && seconds <= 59) {
+        document.querySelector('#slide5').checked = true;
+    }
+    console.log(seconds)
+}
+
+window.setInterval('slideInterval()', 10000);
    
 /*-----------------------Footer----------------------*/
 
