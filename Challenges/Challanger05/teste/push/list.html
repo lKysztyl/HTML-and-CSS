@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 100vw;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        overflow: hidden;
+     
+    
+    }
+
+    .subDiv01 {
+        width: 100vw;
+        height: 33vh;
+       
+
+    }
+
+    .subDiv02 {
+        width: 100vw;
+        height: 33vh;
+       
+     
+       
+    }
+
+    .subDiv03 {
+        width: 100vw;
+        height: 33vh;
+     
+        
+       
+    }
+
+    .subDiv04 {
+        width: 100vw;
+        height: 33vh;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+      
+        
+       
+    }
+
+    .subDiv05 {
+        width: 100vw;
+        height: 33vh;
+       
+        
+       
+    }
+
+    .subDiv06 {
+        width: 100vw;
+        height: 33vh;
+      
+        
+       
+    }
+
+    .subDiv07 {
+        width: 100vw;
+        height: 33vh;
+       
+        
+       
+    }
+
+   
+
+    .line {
+        box-shadow: 0px 3px 1px violet ;
+        width: 200px;
+        height: 10px;
+        display: inline-flex;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -300%);
+        
+       
+    }
+
+    .line-45deg {
+        box-shadow: 3px 3px 1px violet ;
+        width: 100px;
+        height: 100px;
+        display: inline-flex;
+        position: relative;
+        top: 50%;
+        left: -10%;
+        transform: translate(10%, -50%);
+       
+        rotate: 45deg;
+    }
+
+    .line-45deg:nth-child(1) {
+      
+        top: 50%;
+    }
+
+    .line-45deg:nth-child(2) {
+        top: 14%;
+    }
+
+    .line-45deg:nth-child(3) {
+        top: -23%;
+    }
+
+
+    
+
+</style>
+<body id="body">
+    <div class="container">
+        <div class="subDiv01">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="subDiv02"> 
+            <div class="line-45deg"></div>
+            <div class="line-45deg"></div>
+            <div class="line-45deg"></div>
+            
+            </div>
+
+        <div class="subDiv03">
+            <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="subDiv04">
+        <h1>Combo food of the daily</h1>
+        </div>
+
+        <div class="subDiv05">
+            <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+
+        </div>
+
+        <div class="subDiv06">
+            <div class="line-45deg"></div>
+            <div class="line-45deg"></div>
+            <div class="line-45deg"></div>
+
+        </div>
+
+        <div class="subDiv07">
+            <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+
+        </div>
+    </div>
+  
+    </div>
+
+
+
+    <script>
+        var container = document.querySelector('.container');
+        
+
+        var data = 0
+        var id = 0 
+
+        function time() {
+            if (data < 1250) {
+                data++;
+                container.style.width = data + 'px';
+                console.log(container.style.width)
+                return;
+            }
+
+            clearInterval(id);
+            console.log('clean')
+        };
+
+        id = setInterval(time, 5);
+
+       
+
+    </script>
+    
+</body>
+</html>

@@ -1,13 +1,23 @@
 
+.main {
+    max-width: 1535px;
+    position: relative;
+    top: 20;
+    left: 50%;
+    transform: translate(-50%);
+
+}
 
 .thumb {
-    width: 950px;
-    height: 650px;
+    max-width: 1535px;
+    width: 100vw;
+    height: 665px;
     overflow: hidden;
     position: relative;
     top: 20;
     left: 50%;
     transform: translate(-50%);
+    z-index: 2;
 }
 
 .navegation {
@@ -59,10 +69,12 @@
 
 #slide1:checked ~  .s1 {
     margin-left: 0%;
+  
 }
 
 #slide2:checked ~  .s1 {
     margin-left: -20%;
+  
 }
 
 #slide3:checked ~  .s1 {
@@ -77,27 +89,176 @@
     margin-left: -80%;
 }
 
-.comboFood {
-    background-image: url(https://as2.ftcdn.net/v2/jpg/04/43/37/07/1000_F_443370711_sqHRnSIQovW6uyQ5ZwDpd4kjCG8Q6swm.jpg);
-    width: 100vw;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.bg-LeftArrow {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 120px;
+    height: 200px;
+   
 }
 
-.bucha {
-    width: 100vw;
+.bg-RightArrow {
+    position: absolute;
+    top: 35%;
+    left: 85%;
+    width: 120px;
     height: 200px;
+  
+}
+
+
+
+
+.leftArrow {
+    padding: 60px;
+    position: relative;
+    box-shadow: 10px 10px 1px var(--cor01);
+    rotate: 135deg;
+    border-radius: 10px;
+    top: 20%;
+    left: 50%;
+    transition: .5s;
+   
+    
+    
+}
+
+.rightArrow {
+    padding: 60px;
+    position: relative;
+    box-shadow: 10px 10px 1px var(--cor01);
+    rotate: -45deg;
+    border-radius: 10px;
+    top: 20%;
+    left: -40%;
+    transition: .5s;
+    
+}
+
+.bg-LeftArrow:hover > .leftArrow {
+    box-shadow: 10px 10px 1px var(--cor04);
+}
+
+.bg-LeftArrow:active > .leftArrow {
+    box-shadow: 10px 10px 1px var(--cor05);
+}
+
+.bg-RightArrow:hover > .rightArrow {
+    box-shadow: 10px 10px 1px var(--cor04);
+}
+
+.bg-RightArrow:active > .rightArrow {
+    box-shadow: 10px 10px 1px var(--cor05);
+}
+
+
+
+/* =========================Combo Food============================*/
+
+
+.combo-food {
+    max-width: 1535px;
+    height: 150px;
+    background-color: aqua;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+
+.box-left {
+    width: 75px;
+    height: 75px;
+    background-color:var(--cor05);
+    position: absolute;
+    top: 70%;
+    left: 45.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+ 
+    
+    
+    
+}
+
+
+.box-right {
+    width: 75px;
+    height: 75px;
+    background-color: var(--cor05);
+    position: absolute;
+    top: 70%;
+    left: 45.5%;
+    rotate: 45deg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.arrow-left {
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px  var(--cor01);
+    opacity: 0;
+    rotate: 0deg;
+   
+
+
+}
+    
+.arrow-right {
+        width: 50px;
+        height: 50px;
+        box-shadow: 5px 5px  var(--cor01);
+        opacity: 0;
+        rotate: 270deg;
+     
+  
+   
+}
+
+.inside-cf {
+    text-align: center;
+}
+
+.box-center {
+    position: relative;
+    width: 200px;
+    height: 33%;
+    background-color: rgba(0, 0, 255, 0.242);
     text-align: center;
     display: flex;
+    justify-content: center;
     align-items: center;
+ 
 }
 
-.sec-pizza {
-    width: 100vw;
-    height: 500px;
-    background-color: aqua;
+.box-left-center {
+    width: 1px;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px blue;
 }
+
+.box-right-center {
+    width: 10px;
+    height: 1px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px blue;
+}
+
+
 
 
 
@@ -124,6 +285,18 @@
         height: 500px;
         background-color: pink;
     }
+
+    .bg-LeftArrow {
+        display: none;
+    }
+
+    .bg-RightArrow {
+        display: none;
+    }
+
+    
+
+
 }
 
 
