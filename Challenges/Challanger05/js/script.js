@@ -471,12 +471,13 @@ boxRight.animate([{transform: 'rotate(0deg)'}, {transform: 'rotate(360deg)'}, {t
 
 var timerx2 = setInterval(() => {
 
+    // Se o top for maior que 450px reduz a scala das boxs
     if (boxLeft.getBoundingClientRect().top >= 450 && boxRight.getBoundingClientRect().top >= 450) {
         boxLeft.style.top = 705 + 'px';
         boxRight.style.top = 705 + 'px';
         boxLeft.style.transform = 'scale(0.5)';
         boxRight.style.transform = 'scale(0.5)';
-     
+     // mude isso! está ficando fora da tela por causa do 705px
     };
 
     
@@ -491,15 +492,14 @@ var timerx2 = setInterval(() => {
 
     boxLeft.style.rotate = '135deg';
 
+
+    // Animação das boxs
+
     boxLeft.animate([{left: '38%'}],{duration: 1000, easing: 'linear' , iterations: 1});
 
     boxRight.animate([{left: '57%'}],{duration: 1000, easing: 'linear' , iterations: 1});
-   
-    var count = 0;
-    var id = 0;
 
    
-
     const text = ' Combo Food of the Daily';
     const listText = [];
 
@@ -516,7 +516,10 @@ var timerx2 = setInterval(() => {
     boxCenter.appendChild(subDivCF);
     comboFood.appendChild(boxCenter);
 
-    var countTimer = setInterval(() => {
+    let count = 0;
+    let id = 0;
+
+    let countTimer = setInterval(() => {
         if (count < 23 ) {
             count++;
             subDivCF.innerHTML += listText[count];
@@ -537,25 +540,13 @@ var timerx2 = setInterval(() => {
 
 const timerX3 = setInterval(() => {
     const boxCenter =  document.querySelector('.box-center');
-
     const boxRight = document.querySelector('.box-right');
 
     const comboFood = document.querySelector('.combo-food');
-
     comboFood.insertBefore(boxCenter, boxRight);
     
     const boxBefore = document.createElement('div');
     boxBefore.className = 'sub-box-before';
-
-
-   let locatization = boxCenter.getBoundingClientRect().left;
-   let menos = 50;
-
-   let result = locatization - menos;
-   let resultX2 = locatization + 185;
-
-    boxLeft.style.left = result + 'px';
-    boxRight.style.left = resultX2 + 'px';
 
     const boxLeftCenter = document.createElement('div');
     boxLeftCenter.className = 'box-left-center';
@@ -571,9 +562,9 @@ const timerX3 = setInterval(() => {
 
     comboFood.insertBefore(boxRightCenter, boxRight);
 
-    // animation
 
-  
+    // Animação das linhas entre as Boxs.
+
     let time = 0;
     let id = 0;
 
@@ -584,11 +575,10 @@ const timerX3 = setInterval(() => {
         const boxLeftCenter = document.querySelector('.box-left-center');
 
         if (time <= newScreenWidth) {
-           time++;
-           boxLeftCenter.style.width = time + 'px';
-           boxRightCenter.style.width = time + 'px';
-           console.log(boxLeftCenter.style.width);
-           return;
+            time++;
+            boxLeftCenter.style.width = time + 'px';
+            boxRightCenter.style.width = time + 'px';
+            return;
         };
         boxCenter.innerHTML = newScreenWidth
 
@@ -598,23 +588,55 @@ const timerX3 = setInterval(() => {
     id = timerX5;
 
     clearInterval(timerX3);
+
+
+// Set para animar as boxs até o final da linha
+
+let countTimerX6 = 0
+let countTimerX6v2 = 0
+    let timerX6 = setInterval(() => {
+        let screenWidth = window.innerWidth;
+        let newScreenWidth = screenWidth / 4;
+        let newScreenWidthX2 = screenWidth / 3.2;
+
+        let local = document.querySelector('.box-center');
+        let positionBoxCenter = local.getBoundingClientRect().left
+
+        if (countTimerX6 <= newScreenWidth) {
+            countTimerX6+= 3;
+            boxRight.style.left = positionBoxCenter + countTimerX6 + 'px';
+            console.log(local.getBoundingClientRect())
+            return;
+        };
+
+        if (countTimerX6v2 <= newScreenWidthX2) {
+            countTimerX6v2+= 3;
+            boxLeft.style.left = positionBoxCenter - countTimerX6v2 + 'px';
+            return;
+        }
+
+        clearInterval(timerX6)
+    }, 1);
+
+
+    clearInterval(timerX3);
 }, 2800);
 
 
 /*-----------------------Footer----------------------*/
 
 body.addEventListener('mousewheel', function () {
-  backTop();
+    backTop();
 })
 
 function backTop() {
-  if (window.scrollY > 500) {
+    if (window.scrollY > 500) {
     document.querySelector('#backTop').style.bottom = 0
     document.querySelector('#backTop').style.transform = 'translateY(0%)'
     document.querySelector('#backTop').style.transition = 'all 1s'
-  } else if (window.scrollY < 500) {
+    } else if (window.scrollY < 500) {
     document.querySelector('#backTop').style.transform = 'translateY(100%)'
-  }
+    }
 
 }
 
